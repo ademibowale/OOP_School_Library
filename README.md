@@ -36,16 +36,19 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
+## Author
 
+👤 **Ademibowale**
 
-## Authors
-
+- GitHub: [@ademibowale](https://github.com/ademibowale/)
+- Twitter: [@Ademobowale1](https://twitter.com/Ademibowale1)
+- LinkedIn: [Adebowale](https://www.linkedin.com/in/tech-adebowale-adegboye/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/ademibowale/Ruby-Enumerable/issues).
 
 ## Show your support
 
