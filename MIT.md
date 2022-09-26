@@ -1,5 +1,4 @@
-## Copyright 2021, Afolabi Akorede
-
+## Copyright 2021, a ADEBOWALE ADEGBOYE 
 ###### Please delete this line and the next one
 ###### APP TYPE can be a webpage/website, a web app, a software and so on
 
