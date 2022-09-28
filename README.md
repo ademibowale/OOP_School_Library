@@ -2,7 +2,14 @@
 
 # Project Name
 
-> Description the project.
+- OOP-School-Library
+
+## project Description.
+
+> This is a school library app implemented using classes, objects, encapsulation and inheritance with Ruby.
+- Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when.
 
 
 ## Built With
@@ -18,23 +25,38 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+- To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Ruby
+- Github
+
 ### Setup
 
+- With git, clone the code to your machine, or download a ZIP of all the files directly.
+- Download the ZIP file from this location or run the following git command to clone the files to your machine:
+
+> - git clone https://github.com/ademibowale/OOP_School_Library.git
+
 ### Install
+- After opening the files in Visual Studio Code, open the VS Code integrated terminal and run the following commands:
+
+> bundle init
+> bundle install
+
 
 ### Usage
 
+- Run the command in your terminal below to run the ruby program
+
+>  ruby main.rd to run
+
 ### Run tests
 
-### Deployment
+- Run the command in your terminalbelow for linter checks
+
+> rubocop
 
 ## Author
 
