@@ -19,11 +19,15 @@ class App
 
   def list_people
     people = [*@teachers, *@students]
-    people.each_with_index { |person, i| print "(#{i}) Name: \"#{person.name}\", Age: \"#{person.age}\"\n" }
+    people.each_with_index do |person, i|
+      print "(#{i}) Name: \"#{person.name}\",
+    Age: \"#{person.age}\"\n"
+    end
   end
 
   def create_person
-    print 'Do you want to create a student (1) or a teacher (2)? [input a number]:'
+    print 'Do you want to create a student (1)
+    or a teacher (2)? [input a number]:'
     input = gets.chomp.to_i
 
     case input
