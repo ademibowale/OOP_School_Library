@@ -34,9 +34,9 @@ class Main
     when 3
       CreatePerson.new(@app.people).create_person
     when 4
-      CreatePerson.new(@app.people).create_book
+      CreateBook.new(@app.books).create_book
     when 5
-      CreatePerson.new(@app.rent).create_rental(@app)
+      CreateRental.new(@app.rentals).create_rental(@app)
     when 6
       @app.list_rentals
     end
