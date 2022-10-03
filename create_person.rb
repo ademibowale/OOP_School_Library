@@ -35,13 +35,32 @@ class CreatePerson
         
             [age, name]
           end
+        
           def collect_specialization
-                    print 'Specialization:'
-                    gets.chomp
-                  end
-                
-                  def class_get
-                    print 'Enter Classroom:'
-                    gets.chomp
-                  end
-                
+            print 'Specialization:'
+            gets.chomp
+          end
+        
+          def class_get
+            print 'Enter Classroom:'
+            gets.chomp
+          end
+        
+          def create_student
+            age, name = age_name
+            classroom = class_get
+            Student.new(age, classroom, name)
+          end
+        
+          def create_teacher
+            age, name = age_name
+            specialization = collect_specialization
+            Teacher.new(age, name, specialization)
+          end
+        
+          def add_to_collection(person)
+            @people.push(person)
+            puts "#{person.name} added successfully"
+          end
+        end
+        
