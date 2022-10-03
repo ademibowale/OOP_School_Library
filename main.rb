@@ -32,11 +32,11 @@ class Main
     when 2
       @app.list_people
     when 3
-    CreatePerson.new(@app.people).create_person
+      CreatePerson.new(@app.people).create_person
     when 4
-    CreatePerson.new(@app.people).create_book
+      CreatePerson.new(@app.people).create_book
     when 5
-     CreatePerson.new(@app.rent).create_rental(@app)
+      CreatePerson.new(@app.rent).create_rental(@app)
     when 6
       @app.list_rentals
     end

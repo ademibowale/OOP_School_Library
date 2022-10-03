@@ -10,6 +10,7 @@ class CreateRental
     new_rental = Rental.new(date, app.books[book], app.people[person])
     update(new_rental)
   end
+
   private
 
   def collect_data(app)
@@ -24,8 +25,9 @@ class CreateRental
 
     [book, person, date]
   end
+
   def update(new_rental)
-          @rentals << new_rental
-          puts 'Rental created successfully'
-        end
-      end
+    @rentals << new_rental
+    puts 'Rental created successfully'
+  end
+end
