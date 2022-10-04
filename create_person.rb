@@ -27,7 +27,7 @@ class CreatePerson
     gets.chomp.to_i
   end
 
-   def age_name
+  def age_name
     print 'Age:'
     age = gets.chomp.to_i
     print 'Name:'
