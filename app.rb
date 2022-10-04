@@ -20,9 +20,9 @@ class App
     File.open("#{string}.json", 'r')
   end
 
-  def list_books
-    @books.each_with_index { |book, n| print "(#{n}) Title: \"#{book.title}\", Author: \"#{book.author}\"\n" }
-  end
+#   def list_books
+#     @books.each_with_index { |book, n| print "(#{n}) Title: \"#{book.title}\", Author: \"#{book.author}\"\n" }
+#   end
 
   def list_people
     @people.each_with_index do |person, i|
