@@ -68,4 +68,6 @@ class CreatePerson
     File.open('people.json', 'w+') do |file|
       people = JSON.dump(@people)
       file.write(people)
-    
+    end
+  end
+end
