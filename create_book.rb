@@ -20,5 +20,14 @@ class CreateBook
     [title, author]
   end
 
+   def add_to_collection(new_book)
+    # book_new = JSON.generate(new_book)
+    @books.push(new_book)
+    puts "#{new_book.title} created successfully"
+    File.open('books.json', 'w+') do |file|
+      books = JSON.dump(@books)
+      file.write(books)
+    end
+  end
  
 end
