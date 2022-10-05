@@ -1,4 +1,1 @@
-[{"json_class":"Book",
-"arguments":["Tom and Jerry","Fred"]},
-{"json_class":"Book",
-"arguments":["Hello from the outside","Adebowale"]}]
+[{"json_class":"Book","arguments":["Tom and Jerry","Fred"]},{"json_class":"Book","arguments":["Hello from the outside","Adebowale"]},{"json_class":"Book","arguments":["wale ","kemi"]}]
