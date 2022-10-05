@@ -40,6 +40,7 @@
 > - git clone https://github.com/ademibowale/OOP_School_Library.git
 
 ### Install
+
 - After opening the files in Visual Studio Code, open the VS Code integrated terminal and run the following commands:
 
 > bundle init
