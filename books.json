@@ -1,1 +1,2 @@
-[{"json_class":"Book","arguments":["Tom and Jerry","Fred"]},{"json_class":"Book","arguments":["Hello from the outside","Adebowale"]},{"json_class":"Book","arguments":["wale ","kemi"]}]
+[{"json_class":"Book",
+"arguments":["Tom and Jerry","Fred"]},{"json_class":"Book","arguments":["Hello from the outside","Adebowale"]},{"json_class":"Book","arguments":["wale ","kemi"]},{"json_class":"Book","arguments":["the Dog","Taheny"]},{"json_class":"Book","arguments":["the cat","microverse"]}]
