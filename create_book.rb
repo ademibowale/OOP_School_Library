@@ -10,4 +10,15 @@ class CreateBook
     new_book = Book.new(title, author)
     add_to_collection(new_book)
   end
+  private
+
+  def collect_book
+    print 'Book Title:'
+    title = gets.chomp
+    print 'Book Author:'
+    author = gets.chomp
+    [title, author]
+  end
+
+ 
 end
