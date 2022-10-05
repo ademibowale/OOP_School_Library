@@ -10,6 +10,7 @@ class CreateBook
     new_book = Book.new(title, author)
     add_to_collection(new_book)
   end
+
   private
 
   def collect_book
@@ -20,7 +21,7 @@ class CreateBook
     [title, author]
   end
 
-   def add_to_collection(new_book)
+  def add_to_collection(new_book)
     # book_new = JSON.generate(new_book)
     @books.push(new_book)
     puts "#{new_book.title} created successfully"
@@ -29,5 +30,4 @@ class CreateBook
       file.write(books)
     end
   end
- 
 end
