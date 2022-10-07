@@ -4,13 +4,20 @@ require './student'
 require './rental'
 
 class App
-  attr_accessor :books, :teachers, :students, :rentals
+  attr_accessor :books, :people, :rentals
 
   def initialize
-    @books = []
-    @teachers = []
-    @students = []
-    @rentals = []
+    books_file = create_json('books')
+    @books = books_file ? JSON.parse(books_file.read, create_additions: true) : []
+    people_file = create_json('people')
+    @people = people_file ? JSON.parse(people_file.read, create_additions: true) : []
+    rent_file = create_json('rent')
+    @rentals = rent_file ? JSON.parse(rent_file.read, create_additions: true) : []
+  end
+
+  def create_json(string)
+    File.write("#{string}.json", []) unless File.exist?("#{string}.json")
+    File.open("#{string}.json", 'r')
   end
 
   def list_books
@@ -18,72 +25,14 @@ class App
   end
 
   def list_people
-    people = [*@teachers, *@students]
-    people.each_with_index do |person, i|
-      print "(#{i}) Name: \"#{person.name}\",
-    Age: \"#{person.age}\"\n"
+    @people.each_with_index do |person, i|
+      puts "(#{i}) Name: \"#{person.name}\", Age: \"#{person.age}\", Id: \"#{person.id}\""
     end
-  end
-
-  def create_person
-    print 'Do you want to create a student (1)
-    or a teacher (2)? [input a number]:'
-    input = gets.chomp.to_i
-
-    case input
-    when 1
-      print 'Age:'
-      age = gets.chomp.to_i
-      print 'Name:'
-      name = gets.chomp
-      print 'Enter Classroom:'
-      classroom = gets.chomp
-      new_student = Student.new(age, classroom)
-      new_student.name = name
-      @students << new_student
-      puts "#{new_student.name} added successfully"
-
-    when 2
-      print 'Age:'
-      age = gets.chomp.to_i
-      print 'Name:'
-      name = gets.chomp
-      print 'Specialization:'
-      specialization = gets.chomp
-      new_teacher = Teacher.new(age, name, specialization)
-      @teachers << new_teacher
-      puts "#{new_teacher.name} added successfully"
-    end
-  end
-
-  def create_book
-    print 'Book Title:'
-    title = gets.chomp
-    print 'Book Author:'
-    author = gets.chomp
-    new_book = Book.new(title, author)
-    @books << new_book
-    puts "#{new_book.title} created successfully"
-  end
-
-  def create_rental
-    print "Select a book from the following list by number \n"
-    list_books
-    book = gets.chomp.to_i
-    print "select a person \n"
-    list_people
-    person = gets.chomp.to_i
-    print 'select a date'
-    date = gets.chomp
-    people = [*@teachers, *@students]
-    new_rental = Rental.new(date, @books[book], people[person])
-    @rentals << new_rental
-    puts 'Rental created successfully'
   end
 
   def list_rentals
-    print 'Enter person id'
-    id = gets.chomp
+    print 'Enter person id: '
+    id = gets.chomp.to_i
     @rentals.each do |i|
       print "Date: #{i.date}, Title: #{i.book.title}, Author: #{i.book.author}\n" if id == i.person.id
     end
