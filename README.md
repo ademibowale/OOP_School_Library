@@ -59,13 +59,22 @@
 
 > rubocop
 
-## Author
+## Authors
 
 👤 **Ademibowale**
 
 - GitHub: [@ademibowale](https://github.com/ademibowale/)
 - Twitter: [@Ademobowale1](https://twitter.com/Ademibowale1)
 - LinkedIn: [Adebowale](https://www.linkedin.com/in/tech-adebowale-adegboye/)
+
+
+
+👤 **Taheny BELGUITH**
+
+- Twitter: [@TahenyBELGUITH](https://github.com/TahenyBELGUITH)
+- Twitter: [@BelguithTaheny](https://twitter.com/BelguithTaheny)
+- LinkedIn: [@belguith taheny](https://www.linkedin.com/in/belguith-taheny/)
+
 
 ## 🤝 Contributing
 
